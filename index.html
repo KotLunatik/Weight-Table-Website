@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таблица веса</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1 style="text-align: center;">Отслеживание веса</h1>
+
+    <table id="weightTable">
+        <tr>
+            <th>Дата</th>
+            <th>Вес</th>
+            <th>Итого</th>
+        </tr>
+    </table>
+
+    <div style="text-align: center;">
+        <input type="number" id="weightInput" placeholder="Введите вес" step="0.1">
+        <button onclick="addEntry()">Добавить запись</button>
+    </div>
+
+    <button style="display: block; margin: 0 auto;" onclick="saveToFile()">Сохранить в файл</button>
+
+    <input type="file" id="fileInput" style="display: block; margin: 10px auto;" onchange="loadFromFile()">
+
+</body>
+<script src="script.js"></script>
+</html>
